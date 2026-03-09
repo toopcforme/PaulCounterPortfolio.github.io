@@ -11,6 +11,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+    	video.image.fit {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    </style>
 	</head>
 	<body class="is-preload">
 
@@ -68,7 +75,8 @@
 									<li>Motion Capture (Vicon)</li> -->
 									</ul>
 								</header>
-								<a href="#" class="image main"><img src="images/Website_inforgrahic.drawio.png" alt="" /></a>
+								<!-- <a href="#" class="image main"><img src="images/Website_inforgrahic.drawio.png" alt="" /></a> -->
+								<img src="images/InfographicNew.drawio.png" class="image main" alt="" />
 								<ul class="actions special">
 									<!-- <li><a href="#" class="button large">Full Story</a></li> -->
 								</ul>
@@ -114,8 +122,20 @@
 										</a></h2>
 									</header>
 									<!-- <a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a> -->
-									<iframe src="images/PBI2.pdf" style="width:100%; height:600px;" frameborder="0"></iframe>
-									<p>Making creative dashboards is something I love doing using Power BI and Tableau. This is an example of a dashboard I created in Power BI displaying video game hardware and software sales in Japan during the launch week of the Nintendo Switch 2. On the actual dashboard itself, the title can be toggled between Japanese and English using the language button in the top right of the dashboard.</p>
+									<!-- <iframe src="images/Sales1206.pdf" style="width:100%; height:600px;" frameborder="0"></iframe>
+									<iframe src="images/Switch2SalesSinceLaunch.pdf" style="width:100%; height:600px;" frameborder="0"></iframe> -->
+									<!-- <div style="display:flex; flex-direction:column; align-items:center; gap:20px;">
+  									<iframe src="images/Sales1206NEW.pdf" style="width:90%; max-width:700px; height:400px;" frameborder="0"></iframe>
+  									<iframe src="images/Switch2SalesSinceLaunch.pdf" style="width:90%; max-width:700px; height:400px;" frameborder="0"></iframe>
+									</div>
+									<p>Making creative dashboards is something I love doing using Power BI and Tableau. These are examples of dashboards I created displaying Japanese video game hardware and software sales during and since the launch week of the Nintendo Switch 2. On the first dashboard, the title can be toggled between Japanese and English using the language button in the top right of the dashboard. New measures using DAX have been created for both dashboards.</p> -->
+									<div style="display:flex; flex-direction:column; align-items:center; gap:20px; margin-bottom:60px;">
+    								<iframe src="images/Sales1206NEW.pdf" style="width:90%; max-width:700px; height:400px;" frameborder="0"></iframe>
+    								<iframe src="images/Switch2SalesSinceLaunch.pdf" style="width:90%; max-width:700px; height:400px;" frameborder="0"></iframe>
+									</div>
+
+									<p>Making creative dashboards is something I love doing using Power BI and Tableau. These are examples of dashboards I created displaying Japanese video game hardware and software sales during and since the launch week of the Nintendo Switch 2. On the first dashboard, the title can be toggled between Japanese and English using the language button in the top right of the dashboard. New measures using DAX have been created for both dashboards.</p>
+
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>
@@ -127,8 +147,9 @@
 										</a></h2>
 									</header>
 									<img src="images/BlenderPlane.png" alt="Blender plane rendering" class="image fit" />
-									<p>Blender is another application that allows my creativity to flow and I have rendered works following Udemy courses and online tutorials. Blender is a fantastic free tool and I love using it to develop my creative skillset.</p>
 									<img src="images/Lighthouse.png" alt="Blender plane rendering" class="image fit" />
+									<p>Blender is another application that allows my creativity to flow and I have rendered works following Udemy courses and online tutorials. Blender is a fantastic free tool and I love using it to develop my creative skillset.</p>
+									<img src="images/dUNGEON.png" alt="Blender plane rendering" class="image fit" />
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>
@@ -242,6 +263,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+			document.addEventListener("DOMContentLoaded", function() {
+    		const videos = document.querySelectorAll("video");
+    		videos.forEach(v => {
+        	v.volume = 0.2; // set starting volume (0.0–1.0)
+    		});
+			});
+			</script>
 
 	</body>
 
